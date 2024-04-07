@@ -1,0 +1,5 @@
+standard_test_images/
+build/
+*.o
+*.exe
+*.bmp
