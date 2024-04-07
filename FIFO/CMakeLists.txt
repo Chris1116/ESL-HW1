@@ -25,8 +25,8 @@ target_link_libraries(gaussian systemc)
 # Add test gaussian filter command
 set(OUT_FILE "out05.bmp")
 add_custom_command(OUTPUT ${OUT_FILE}
-	#COMMAND ./gaussian ../../preprocessed/lena_color_256_noise.bmp ./${OUT_FILE}
-	COMMAND ./gaussian ../../preprocessed/woman_blonde_noise.bmp ./${OUT_FILE}
+	COMMAND ./gaussian ../../preprocessed/lena_color_256_noise.bmp ./${OUT_FILE}
+	#COMMAND ./gaussian ../../preprocessed/woman_blonde_noise.bmp ./${OUT_FILE}
 	#COMMAND ./gaussian ../../preprocessed/pirate_noise.bmp ./${OUT_FILE}
 	DEPENDS gaussian
 	WORKING_DIRECTORY ${CMAKE_BINARY_DIR}	
