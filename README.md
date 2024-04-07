@@ -50,7 +50,7 @@ Implement a Gaussian blur filter with SystemC modules connected with SystemC FIF
 
 ### System Architecture
 
-![Alt text](nobuffer.png)
+![Alt text](img/nobuffer.png)
 
 ### Implementation
 
@@ -211,7 +211,7 @@ Continued from `part1`, and with additional input data buffer, which can reduce 
 
 ### System Architecture
 
-![Alt text](buffer.png)
+![Alt text](img/buffer.png)
 
 ### Implementation
 
@@ -311,11 +311,11 @@ We can notice that w/o the input buffer, the pixel data transfer is `6553600 / 1
 
   Each pixels for calculation requires 5 x 5 data transfer. For 512 x 512 pixels input data, it requires `512 x 512 x (5 x 5) = 6553600` data transfer.
 
-  <img src="part1.png" alt="Alt text" width="380" height="200">
+  <img src="img/part1.png" alt="Alt text" width="380" height="200">
 
 - w/ buffer (part2):
   `1320960 pixels` transferred.
 
   Calculation for first row requires 5 x 5 data transfer. AS for the remaining pixels, each pixel require 5 data transfer. For 512 x 512 pixels input data, it requires `512 cols x (5 x 5) = 12800` for first row pixels, and `512 cols x 511 rows x 5 = 1308160` for the remaining pixels. Thus, the total data transfer = `12800 + 1308160 = 1320960`
 
-  <img src="part2.png" alt="Alt text" width="380" height="200">
+  <img src="img/part2.png" alt="Alt text" width="380" height="200">
