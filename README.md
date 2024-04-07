@@ -22,11 +22,11 @@
 
 - Original image
 
-<img src="preprocessed/lena_color_256_noise.bmp" alt="Alt text" width="256" height="256">
+<img src="img/lena_color_256_noise.bmp" alt="Alt text" width="256" height="256">
 
 - Filtered image
 
-![Alt text](FIFO/build/out01.bmp)
+![Alt text](img/out01.bmp)
 
 ### Gaussian Filter 5 x 5 Kernel in `GaussianFilter.cpp`
 
@@ -50,7 +50,7 @@ Implement a Gaussian blur filter with SystemC modules connected with SystemC FIF
 
 ### System Architecture
 
-![Alt text](img/nobuffer.png)
+<img src="img/nobuffer.png" alt="Alt text" width="500" height="300">
 
 ### Implementation
 
@@ -211,7 +211,7 @@ Continued from `part1`, and with additional input data buffer, which can reduce 
 
 ### System Architecture
 
-![Alt text](img/buffer.png)
+<img src="img/buffer.png" alt="Alt text" width="500" height="300">
 
 ### Implementation
 
